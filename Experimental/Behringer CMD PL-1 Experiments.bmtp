@@ -1,0 +1,37 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Keys to MIDI
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010008CMD PL-1
+Name0=LED On
+Incoming0=KAM11000KSQ10001013
+Outgoing0=MID2MIDA00010008CMD PL-1902201
+Options0=Actv01Stop00OutO01
+Name1=LED Reset
+Incoming1=KAM12000KSQ10001013
+Outgoing1=MID2MIDA00010008CMD PL-1902200
+Options1=Actv01Stop00OutO01
+Name2=Effect Dial Change + LED
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>CMD PL-1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010008CMD PL-1B004ga
+Options2=Actv01Stop00OutO01StMa00000007if(pp<65)goto0008decreasega=ga+1if(ga>15)ga=15executelabel0008decreasega=ga-1if(ga<1)ga=1
+
+[Project]
+Version=2
+Author=
+AuthorContact=
+Comments=
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA00020013Bome Virtual Port 10021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010008CMD PL-1
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=nWLtoM/4EVJPre57egeaoxfcw7xYFU0Ni7TNemdWMfLNOeGSyBnptAGY6apBaR5lL8TK6vj21ObcC7/F4Zv0xJyxl9YHYXAWcC2XMIWUWxSdIcCaL4aDaFYEAm8sJpDU1YaoZ0ptWSTllt7Tqp87YiYwe7LvQwB3jzXBmg+6W0Y=
+SignedBy-1=Callum McEwen
