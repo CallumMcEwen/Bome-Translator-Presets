@@ -1,0 +1,111 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Video Editor
+Active=1
+PresetSwitchIgnore=0
+Name0=Init
+Incoming0=EnDi02
+Outgoing0=MID2MIDA00010008CMD PL-1902301
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID3<Incoming Action="MIDI"><Description>Play Button</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=KAM10100KSQ10004011020220211
+Options1=Actv01Stop00OutO01
+Name2=Play LED Blink
+Incoming2=MID3<Incoming Action="MIDI"><Description>Play LED Blink</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010008CMD PL-1902302
+Options2=Actv01Stop00OutO00StMa00000003g0=g0+1if(g0>1)g0=0if(g0!=1)noexecute
+Name3=Play LED On
+Incoming3=MID3<Incoming Action="MIDI"><Description>Play LED On</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010008CMD PL-1902301
+Options3=Actv01Stop00OutO00StMa00000001if(g0!=0)noexecute
+Name4=Next Frame
+Incoming4=MID1MIDD000BWheel RightB01F41
+Outgoing4=KAM10100KSQ10004012127327212
+Options4=Actv01Stop00OutO01
+Name5=Previous Frame
+Incoming5=MID1MIDD000AWheel LeftB01F3F
+Outgoing5=KAM10100KSQ10004012125325212
+Options5=Actv01Stop00OutO01
+Name6=Projects
+Incoming6=MID1MIDD0008Button 190107F
+Outgoing6=KAM10100KSQ10004011031231211
+Options6=Actv01Stop00OutO01
+Name7=Projects LED
+Incoming7=MID1MIDD001EButton 1 LED On all others Off90107F
+Outgoing7=MID1901001901100901200901300901400901500901600
+Options7=Actv01Stop00OutO01
+Name8=Media
+Incoming8=MID1MIDD0008Button 290117F
+Outgoing8=KAM10100KSQ10004011032232211
+Options8=Actv01Stop00OutO01
+Name9=Media LED
+Incoming9=MID1MIDD001EButton 2 LED On all others Off90117F
+Outgoing9=MID1901000901101901200901300901400901500901600
+Options9=Actv01Stop00OutO01
+Name10=Transitions
+Incoming10=MID1MIDD0008Button 390127F
+Outgoing10=KAM10100KSQ10004011033233211
+Options10=Actv01Stop00OutO01
+Name11=Transitions LED
+Incoming11=MID1MIDD001EButton 3 LED On all others Off90127F
+Outgoing11=MID1901000901100901201901300901400901500901600
+Options11=Actv01Stop00OutO01
+Name12=Effects
+Incoming12=MID1MIDD0008Button 490137F
+Outgoing12=KAM10100KSQ10004011034234211
+Options12=Actv01Stop00OutO01
+Name13=Effects LED
+Incoming13=MID1MIDD001EButton 4 LED On all others Off90137F
+Outgoing13=MID1901000901100901200901301901400901500901600
+Options13=Actv01Stop00OutO01
+Name14=Text
+Incoming14=MID1MIDD0008Button 590147F
+Outgoing14=KAM10100KSQ10004011035235211
+Options14=Actv01Stop00OutO01
+Name15=Text LED
+Incoming15=MID1MIDD001EButton 5 LED On all others Off90147F
+Outgoing15=MID1901000901100901200901300901401901500901600
+Options15=Actv01Stop00OutO01
+Name16=Voice
+Incoming16=MID1MIDD0008Button 690157F
+Outgoing16=KAM10100KSQ10004011036236211
+Options16=Actv01Stop00OutO01
+Name17=Voice LED
+Incoming17=MID1MIDD001EButton 6 LED On all others Off90157F
+Outgoing17=MID1901000901100901200901300901400901501901600
+Options17=Actv01Stop00OutO01
+Name18=Disc Menu
+Incoming18=MID1MIDD0008Button 790167F
+Outgoing18=KAM10100KSQ10004011037237211
+Options18=Actv01Stop00OutO01
+Name19=Disc Menu LED
+Incoming19=MID1MIDD001EButton 7 LED On all others Off90167F
+Outgoing19=MID1901000901100901200901300901400901500901601
+Options19=Actv01Stop00OutO01
+Name20=Next Scene
+Incoming20=MID1MIDD000ACUE Button90227F
+Outgoing20=KAM10100KSQ1000601101204E24E212211
+Options20=Actv01Stop00OutO01
+Name21=Next Scene LED On
+Incoming21=MID1MIDD000ECUE Button LED90227F
+Outgoing21=MID2MIDA00010008CMD PL-1902201
+Options21=Actv01Stop00OutO01
+
+[Project]
+Version=2
+Author=Callum McEwen
+AuthorContact=mcewenca@gmail.com
+Comments=AVS4You Software Control using the Behringer CMD-PL1.
+AuthorWWW=
+AuthorCopyright=
+DefaultInPorts=MIDA00010008CMD PL-1
+DefaultOutPorts=MIDA00010008CMD PL-1
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=bjhbo4ooS1JLuMVYwimbtP7lkW6FxPoLuxDQ7/r63174Kn3dny4jU075e99is8Ch/NJms56wwq7GifqM7/YplL06pRanYgsCsUwNmwZyGL4BRapW35Zarx5wZsgsDwKuzqROqHBeH6g0wULZ2BFNp278xXu8gVFAdEJw5AtT8Hk=
+SignedBy-1=Callum McEwen
