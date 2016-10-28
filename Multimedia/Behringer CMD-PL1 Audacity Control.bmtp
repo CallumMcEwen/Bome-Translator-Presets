@@ -1,0 +1,49 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=Audacity
+Active=1
+PresetSwitchIgnore=0
+DefaultInPorts=MIDA00010008CMD PL-1
+DefaultOutPorts=MIDA00010008CMD PL-1
+Name0=Init
+Incoming0=EnDi02
+Outgoing0=MID2MIDA00010008CMD PL-1902301
+Options0=Actv01Stop00OutO00
+Name1=Play
+Incoming1=MID3<Incoming Action="MIDI"><Description>Play Button</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x7F"/></Simple></Incoming>
+Outgoing1=KAM10100KSQ10002020220
+Options1=Actv01Stop00OutO01
+Name2=Play LED Blink
+Incoming2=MID3<Incoming Action="MIDI"><Description>Play LED Blink</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing2=MID2MIDA00010008CMD PL-1902302
+Options2=Actv01Stop00OutO00StMa00000003g0=g0+1if(g0>1)g0=0if(g0!=1)noexecute
+Name3=Play LED On
+Incoming3=MID3<Incoming Action="MIDI"><Description>Play LED On</Description><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x23"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Outgoing3=MID2MIDA00010008CMD PL-1902301
+Options3=Actv01Stop00OutO00StMa00000001if(g0!=0)noexecute
+Name4=Cursor Right
+Incoming4=MID1MIDD000FJog Wheel RightB01F41
+Outgoing4=KAM10100KSQ10002127327
+Options4=Actv01Stop01OutO01
+Name5=Cursor Left
+Incoming5=MID1MIDD000EJog Wheel LeftB01F3F
+Outgoing5=KAM10100KSQ10002125325
+Options5=Actv01Stop01OutO01
+
+[Project]
+Version=2
+Author=Callum McEwen
+AuthorContact=mcewenca@gmail.com
+Comments=
+AuthorWWW=
+AuthorCopyright=2016
+DefaultInPorts=MIDA00010008CMD PL-1
+DefaultOutPorts=MIDA0000
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=x1yf0TEjlDGBU0pNcFhJvVR6bZ1MvQ7RsqJrV21VWO16fi9FLfNlutjVrw4v2SlNVOPHOadXhqCDOXsx47YWXxlIHo/72OgyEwCgEwreCyt4XbbmkCKGuDohTEQKRUFJVatbbZBhCQZXiiEbwOQXqQJHqXTtC4YTyCnlAh9A9RY=
+SignedBy-1=Callum McEwen
