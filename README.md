@@ -12,3 +12,10 @@ while others are complete. These presets can be altered using Bome Midi Translat
 
 To find out more about the Behringer CMD PL-1 Midi Controller goto 
 http://www.music-group.com/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-PL-1/p/P0AJF
+
+Note that these files are signed so you will need a registered copy of Bome Midi Translator or Bome MT Player for them to work.
+
+
+Cheers
+
+Callum (VK5MCA)
