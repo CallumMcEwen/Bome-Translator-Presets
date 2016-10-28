@@ -1,0 +1,31 @@
+; ------- Bome MIDI Translator: Signed Project File
+; ------- You can modify this file as you like, but that will invalidate
+; ------- the signature so that it cannot be opened in MT Player anymore.
+;
+[Preset.0]
+Name=SDRUno Controller
+Active=1
+PresetSwitchIgnore=0
+Name0=Tune Up
+Incoming0=MID1MIDD000AWheel LeftB01F41
+Outgoing0=Mse205-1
+Options0=Actv01Stop00OutO01
+Name1=Tune Down
+Incoming1=MID1MIDD000BWheel RightB01F3F
+Outgoing1=Mse2051
+Options1=Actv01Stop00OutO01
+
+[Project]
+Version=2
+Author=Callum McEwen
+AuthorContact=mcewenca@gmail.com
+Comments=Still a work in progress
+AuthorWWW=
+AuthorCopyright=2016
+DefaultInPorts=MIDA00010008CMD PL-1
+DefaultOutPorts=MIDA00010008CMD PL-1
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=L4Wcct80B4LhnU6mEW/fETR244RNWFg0le6GTNZc7g/PbKlwM5J7ZV7Tn4/OBusQzVNT++EUT2kgpP/eXvv4gZDfsoSqZuCupH5Bx97nP2VMJquHJFV33Pa001nMXF6H6ED83XH62BORpSF1kBuABs5Z+Q/pNF/pr7SSdqZiT8M=
+SignedBy-1=Callum McEwen
