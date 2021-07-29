@@ -2,7 +2,7 @@
 Collection of Bome Midi Translator Presets
 
 Originally I purchased the Behringer CMD PL-1 Midi controller so I could use it with SDR-Console V2. It was a cheap way of having
-a large know (Jog Wheel) for tuning a radio.
+a large knob (Jog Wheel) for tuning a radio.
 
 Using Bome Midi Translator http://www.bome.com I can also use the CMD PL-1 to control almost any other piece of software or use
 software to control the LEDs on the Midi controller.
